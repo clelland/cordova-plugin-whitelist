@@ -36,7 +36,7 @@ xmlns:android="http://schemas.android.com/apk/res/android"
             </feature>
         </config-file>
 
-        <source-file src="src/android/Whitelist.java" target-dir="src/org/apache/cordova/whitelist" />
+        <source-file src="src/android/WhitelistPlugin.java" target-dir="src/org/apache/cordova/whitelist" />
     </platform>
 
 </plugin>
