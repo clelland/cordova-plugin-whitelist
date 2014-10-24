@@ -39,4 +39,16 @@ xmlns:android="http://schemas.android.com/apk/res/android"
         <source-file src="src/android/WhitelistPlugin.java" target-dir="src/org/apache/cordova/whitelist" />
     </platform>
 
+    <!-- ios -->
+    <platform name="ios">
+        <config-file target="config.xml" parent="/*">
+            <feature name="Whitelist">
+                <param name="ios-package" value="CDVWhitelistPlugin"/>
+                <param name="onload" value="true" />
+            </feature>
+        </config-file>
+
+        <header-file src="src/ios/CDVWhitelistPlugin.h" />
+        <source-file src="src/ios/CDVWhitelistPlugin.m" />
+    </platform>
 </plugin>
